@@ -24,7 +24,7 @@
 <p>E-posta: tacoappinfo@gmail.com</p>
 <h2>2. İşlenen Kişisel Veriler</h2>
 <ul>
-<li>Hesap bilgileri: e-posta adresi, kullanıcı adı, görünen ad, biyografi, profil fotoğrafı, doğum tarihi (16 yaş sınırının uygulanması için), kabul ettiğiniz kullanım koşulları sürümü ve tarihi. Şifreniz yalnızca geri döndürülemez biçimde özetlenerek (bcrypt) saklanır.</li>
+<li>Hesap bilgileri: e-posta adresi, kullanıcı adı, görünen ad, biyografi, profil fotoğrafı, 16 yaşından büyük olduğunuzun doğrulandığı bilgisi (doğum tarihiniz kayıt sırasında yalnızca bu kontrol için kullanılır ve saklanmaz), kabul ettiğiniz kullanım koşulları sürümü ve tarihi. Şifreniz yalnızca geri döndürülemez biçimde özetlenerek (bcrypt) saklanır.</li>
 <li>Paylaştığınız içerikler: anılar, açıklamalar, gün puanı, fotoğraflar, gizlilik tercihleri, yorumlar, beğeniler, ReTaco'lar ve alıntı metinleri.</li>
 <li>Sosyal ilişkiler: takip ettiğiniz ve sizi takip eden hesaplar, takip istekleri, engellediğiniz hesaplar ve bildirimler.</li>
 <li>Özel mesajlar: gönderdiğiniz ve aldığınız mesajlar ile okunma zamanları. Mesajlar gönderildikten 7 gün sonra otomatik olarak silinir.</li>
@@ -62,7 +62,9 @@
 <h2>7. Saklama Süreleri</h2>
 <ul>
 <li>Hesap bilgileri ve içerikler: hesabınız açık olduğu sürece. Bir içeriği sildiğinizde hemen silinir.</li>
-<li>Özel mesajlar: gönderildikten 7 gün sonra otomatik olarak silinir.</li>
+<li>Özel mesajlar: gönderildikten 7 gün sonra otomatik olarak silinir; mesajı kalmayan sohbetler de silinir.</li>
+<li>Bildirimler: 90 gün.</li>
+<li>Kapanmış şikayet kayıtları ve çözülmüş destek talepleri: 1 yıl.</li>
 <li>Hesabınızı sildiğinizde: hesap bilgileriniz, anılarınız, fotoğraflarınız, yorumlarınız, beğenileriniz, takip ilişkileriniz, mesajlarınız ve destek talepleriniz hemen ve kalıcı olarak silinir.</li>
 <li>Şikayet anındaki içerik kopyaları: olası hukuki uyuşmazlıklarda delil olabilmesi için şikayet tarihinden itibaren en fazla 1 yıl saklanır, sonra otomatik olarak silinir. Bu süre içinde içerik ya da hesap silinse de (7 gün sonra silinen mesajlar dâhil) kopya saklanmaya devam eder.</li>
 <li>Hız sınırı ve hatalı giriş denemesi kayıtları: en fazla 1 gün.</li>
@@ -94,7 +96,7 @@
 <p>Email: tacoappinfo@gmail.com</p>
 <h2>2. Personal Data We Process</h2>
 <ul>
-<li>Account data: email address, username, display name, bio, profile photo, date of birth (to enforce the 16+ age limit), and the version and date of the terms you accepted. Your password is stored only as an irreversible hash (bcrypt).</li>
+<li>Account data: email address, username, display name, bio, profile photo, confirmation that you are over 16 (your date of birth is used only for this check at sign-up and is not stored), and the version and date of the terms you accepted. Your password is stored only as an irreversible hash (bcrypt).</li>
 <li>Content you share: memories, descriptions, day ratings, photos, privacy settings, comments, likes, ReTacos and quote texts.</li>
 <li>Social connections: accounts you follow and that follow you, follow requests, accounts you block, and notifications.</li>
 <li>Direct messages: messages you send and receive, and when they were read. Messages are deleted automatically 7 days after they are sent.</li>
@@ -132,7 +134,9 @@
 <h2>7. Retention</h2>
 <ul>
 <li>Account data and content: for as long as your account exists. Content you delete is deleted immediately.</li>
-<li>Direct messages: deleted automatically 7 days after they are sent.</li>
+<li>Direct messages: deleted automatically 7 days after they are sent; conversations with no remaining messages are deleted too.</li>
+<li>Notifications: 90 days.</li>
+<li>Closed reports and resolved support requests: 1 year.</li>
 <li>When you delete your account: your account data, memories, photos, comments, likes, connections, messages and support requests are deleted immediately and permanently.</li>
 <li>Copies of reported content: kept for at most 1 year from the report date as possible evidence in legal disputes, then deleted automatically, even if the content (including messages deleted after 7 days) or the account was deleted in the meantime.</li>
 <li>Rate-limit and failed sign-in records: at most 1 day.</li>
